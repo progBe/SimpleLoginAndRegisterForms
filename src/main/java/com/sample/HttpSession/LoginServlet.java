@@ -1,4 +1,4 @@
-package com.sample.session;
+package com.sample.HttpSession;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

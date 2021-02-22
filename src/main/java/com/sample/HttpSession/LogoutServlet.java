@@ -1,4 +1,4 @@
-package com.sample.session;
+package com.sample.HttpSession;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -28,4 +28,5 @@ public class LogoutServlet extends HttpServlet {
         }
         response.sendRedirect("login.html");
     }
+
 }
