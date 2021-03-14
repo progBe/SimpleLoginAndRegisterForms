@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="form_calculator" />
         <module name="forms" />
+        <module name="forms — копия" />
       </profile>
     </annotationProcessing>
   </component>
