@@ -1,4 +1,4 @@
-package com.sample.HttpSession;
+package com.sample.session;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,8 +10,8 @@ import java.io.PrintWriter;
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private final String userID = "aru";
-    private final String password = "12345";
+    private final String userID = "justaru";
+    private final String password = "admin";
 
     protected void doPost(HttpServletRequest request,
                           HttpServletResponse response) throws ServletException, IOException {
@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
         }else{
             RequestDispatcher rd = getServletContext().getRequestDispatcher("/login.html");
             PrintWriter out= response.getWriter();
-            out.println("<font color=red>Either user name or password is wrong.</font>");
+            out.println("<font color=red>Username or password is incorrect!</font>");
             rd.include(request, response);
         }
     }
