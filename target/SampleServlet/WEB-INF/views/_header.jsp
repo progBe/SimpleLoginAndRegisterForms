@@ -8,14 +8,37 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
 
-<div style="height: 55px; padding: 5px;">
-  <div style="float: left">
-<%--     <h1> Home Page</h1>--%>
-      <p>This is a header*.</p>
-  </div>
+<html>
+<head>
+    <title>user-form</title>
 
-  <div style="float: right; padding: 10px; text-align: right;">
-     <h3>Hello <%=(session.getAttribute("user"))%>, WELCOME! </h3>
-   <br/>
-  </div>
+	<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+	 <link rel="stylesheet" href="calculatorViewStyle.css">
+
+</head>
+<div>
+    <header>
+		<nav class="navbar navbar-expand-md navbar-dark"
+			style="background-color: tomato">
+			<div>
+				<a href="https://www.javaguides.net" class="navbar-brand"> Simple JavaEE App </a>
+			</div>
+
+			<ul class="navbar-nav">
+				<li><a href="<%=request.getContextPath()%>/home"
+					class="nav-link">Home</a></li>
+				<li><a href="<%=request.getContextPath()%>/calculator"
+					class="nav-link">Calculator</a></li>
+				<li><a href="<%=request.getContextPath()%>/list"
+					class="nav-link">Users</a></li>
+				<li><a href="<%=request.getContextPath()%>/login"
+					class="nav-link">Login</a></li>
+			</ul>
+		</nav>
+	</header>
 </div>
+</html>

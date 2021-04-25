@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Login Success Page</title>
-    <link href="styles.css" rel="stylesheet">
+
 </head>
 <body>
 <%
@@ -18,10 +18,11 @@
         }
     }
 %>
-<%--<h3>Hello <%=user%>, WELCOME! </h3>--%>
+
 <jsp:include page="WEB-INF/views/_header.jsp"></jsp:include>
 
 <h3>Home Page</h3>
+
 
       This is Simple web application using jsp, servlets. <br><br>
       <b>It includes the following functions:</b>

@@ -10,8 +10,8 @@ import java.io.PrintWriter;
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private final String userID = "justaru";
-    private final String password = "admin";
+    private final String userID = "admin";
+    private final String password = "    ";
 
     protected void doPost(HttpServletRequest request,
                           HttpServletResponse response) throws ServletException, IOException {
@@ -30,8 +30,8 @@ public class LoginServlet extends HttpServlet {
             response.addCookie(userName);
             response.sendRedirect("LoginSuccess.jsp");
         }else{
-            RequestDispatcher rd = getServletContext().getRequestDispatcher("/login.html");
-            PrintWriter out= response.getWriter();
+            RequestDispatcher rd = getServletContext().getRequestDispatcher("login.jsp");
+            PrintWriter out = response.getWriter();
             out.println("<font color=red>Username or password is incorrect!</font>");
             rd.include(request, response);
         }
